@@ -409,9 +409,35 @@
             </li>
           </ul>
         </div>
+        <form>
+          <p class="form-subscribe">Підпишіться на розсилку</p>
+          <div class="form-field">
+            <!-- <label for="your-mail">Підпишіться на розсилку</label> -->
+
+            <input
+              type="email"
+              name="mail-footer"
+              id="mail-footer"
+              placeholder="E-mail"
+              class="form-input"
+            />
+            <button type="submit" class="submit-btn">
+              Підписатися
+              <svg class="paper-plane-icon">
+                <use href="./images/sprite.svg#paper-plane"></use>
+              </svg>
+
+              <!-- <svg id="paper-plane" class="paper-plane-icon" viewBox="0 0 32 32">
+                <path
+                  d="M32 0 0 18l10.227 3.787L26 7 14.003 23.187l.009.003-.012-.003V32l5.735-6.691L27.002 28l4.999-28z"
+                />
+              </svg> -->
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
-		<!-- Модальне вікно -->
+    <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-button" data-modal-close>
@@ -419,6 +445,22 @@
             <use href="./images/sprite.svg#close-button"></use>
           </svg>
         </button>
+        <form>
+          <p class="modal-name-form">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="modal-thumb">
+            <label for="name">Ім'я</label>
+            <input type="text" name="name" id="name" />
+
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+
+            <label for="mail-modal">Пошта</label>
+            <input type="email" name="mail-modal" id="mail-modal" />
+
+            <label for="comment">Коментар</label>
+            <textarea name="comment" id="comment"> </textarea>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
