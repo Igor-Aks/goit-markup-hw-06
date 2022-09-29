@@ -414,13 +414,7 @@
           <div class="form-field">
             <!-- <label for="your-mail">Підпишіться на розсилку</label> -->
 
-            <input
-              type="email"
-              name="mail-footer"
-              id="mail-footer"
-              placeholder="E-mail"
-              class="form-input"
-            />
+            <input type="email" name="mail-footer" id="mail-footer" placeholder="E-mail" />
             <button type="submit" class="submit-btn">
               Підписатися
               <svg class="paper-plane-icon">
@@ -445,20 +439,47 @@
             <use href="./images/sprite.svg#close-button"></use>
           </svg>
         </button>
-        <form>
-          <p class="modal-name-form">Залиште свої дані, ми вам передзвонимо</p>
-          <div class="modal-thumb">
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <div class="form-element">
             <label for="name">Ім'я</label>
-            <input type="text" name="name" id="name" />
+            <div class="form-input">
+              <svg class="human-icon">
+                <use href="./images/sprite.svg#human"></use></svg
+              ><input type="text" name="name" id="name" />
+            </div>
+          </div>
 
+          <div class="form-element">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <div class="form-input">
+              <svg class="phone-handset-icon">
+                <use href="./images/sprite.svg#phone-handset"></use></svg
+              ><input type="tel" name="tel" id="tel" />
+            </div>
+          </div>
 
+          <div class="form-element">
             <label for="mail-modal">Пошта</label>
-            <input type="email" name="mail-modal" id="mail-modal" />
+            <div class="form-input">
+              <svg class="envelope-black-icon">
+                <use href="./images/sprite.svg#envelope-black"></use></svg
+              ><input type="email" name="mail-modal" id="mail-modal" />
+            </div>
+          </div>
 
+          <div class="form-element">
             <label for="comment">Коментар</label>
-            <textarea name="comment" id="comment"> </textarea>
+            <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+          </div>
+
+          <div class="accept">
+            <input type="checkbox" name="checkbox" id="accept" />
+            <label for="accept">
+              Погоджуюся з розсилкою та приймаю
+              <a class="accept-link" href=""><span>Умови договору </span> </a>
+            </label>
+            <button type="submit" class="modal-submit-btn">Відправити</button>
           </div>
         </form>
       </div>
